@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet</title>
+  </head>
+
+  <body>
+    <!--Child:> 
+        nav>ul>li 
+    -->
+    <nav>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
+
+    <!-- Sibling 
+       div+p+bq
+    -->
+    <div></div>
+    <p></p>
+    <blockquote></blockquote>
+
+    <!-- Climb-up: ^
+         div+div>p>span+em^bq -->
+        <div></div>
+        <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+        </div>
+
+    <!-- Grouping: ()
+        div>(header>ul>li*2>a)+footer>p
+     -->
+     <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- Grouping: ()
+        (div>dl>(dt+dd)*3)+footer>p 
+    -->
+    <div>
+        <dl>
+            <dt></dt>
+            <dd></dd>
+            <dt></dt>
+            <dd></dd>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- Multiplication: * -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Naming and numbering: $ -->
+    <ul>
+        <li class="sample1"></li>
+        <li class="sample2"></li>
+        <li class="sample3"></li>
+        <li class="sample4"></li>
+        <li class="sample5"></li>
+    </ul>
+
+    <h1 title="topic1">Headline 1</h1>
+    <h2 title="topic2">Headline 2</h2>
+    <h3 title="topic3">Headline 3</h3>
+
+    <ul>
+        <li class="item001"></li>
+        <li class="item002"></li>
+        <li class="item003"></li>
+        <li class="item004"></li>
+        <li class="item005"></li>
+    </ul>
+
+    <ul>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+    </ul>
+
+    <!-- ID and Class attributes -->
+    <div id="header"></div>
+    <div class="title"></div>
+    <form action="" id="search" class="wide"></form>
+    <p class="class1 class2 class3"></p>
+
+    <!-- custom attributes -->
+    <p title="Hello World"></p>
+    <td rowspan="2" colspan="3" title=""></td>
+    <div a="‘value1‘" b="value2"></div>
+
+    <!-- Text: {} -->
+    <a href="">click me</a>
+    <p>Click <a href="">here</a> to continue</p>
+
+    <!-- Implicit tag names -->
+    <div class="class"></div>
+    <em><span class="class"></span></em>
+    <ul>
+        <li class="class"></li>
+    </ul>
+    <table>
+        <tr class="row">
+            <td class="col"></td>
+        </tr>
+    </table>
+
+
+    <!-- HTML -->
+    <a href=""></a>
+    <a href="http://"></a>
+    <a href="mailto:"></a>
+    <abbr title=""></abbr>
+    <acronym title=""></acronym>
+    <base href="" />
+    <basefont />
+    <br>
+    <frame>
+    <hr>
+    <bdo dir=""></bdo>
+    <bdo dir="rtl"></bdo>
+    <bdo dir="ltr"></bdo>
+    <col>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS">
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <link rel="import" href="component.html">
+    <meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta:win></meta:win>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <style></style>
+    <script></script>
+    <script src=""></script>
+    <img src="" alt="">
+    <img src="" alt="" srcset="">
+    <img src="" alt="" sizes="" srcset="">
+    <picture></picture>
+    <source>
+    <source src="" type="">
+    <source srcset="">
+    <source media="(min-width: )" srcset="">
+    <source srcset="" type="image/">
+    <source sizes="" srcset="">
+    <source media="(min-width: )" srcset="" type="image/">
+    <source media="(min-width: )" srcset="" sizes="">
+    <source sizes="" srcset="" type="image/">
+    <iframe src="" frameborder="0"></iframe>
+    <embed src="" type="">
+    <object data="" type=""></object>
+    <param name="" value="">
+    <map name=""></map>
+    <area shape="" coords="" href="" alt="">
+    <area shape="default" coords="" href="" alt="">
+    <area shape="circle" coords="" href="" alt="">
+    <area shape="rect" coords="" href="" alt="">
+    <area shape="poly" coords="" href="" alt="">
+
+    <form action=""></form>
+    <form action="" method="get"></form>
+    <form action="" method="post"></form>
+    <label for=""></label>
+    <input type="text">
+    <input type="text" name="" id="">
+    <input type="hidden" name="">
+    <input type="text" name="" id="">
+    <input type="search" name="" id="">
+    <input type="email" name="" id="">
+    <input type="url" name="" id="">
+    <input type="password" name="" id="">
+    <input type="datetime" name="" id="">
+    <input type="date" name="" id="">
+    <input type="datetime-local" name="" id="">
+    <input type="month" name="" id="">
+    <input type="week" name="" id="">
+    <input type="time" name="" id="">
+    <input type="tel" name="" id="">
+    <input type="number" name="" id="">
+    <input type="color" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="range" name="" id="">
+    <input type="file" name="" id="">
+    <input type="image" src="" alt="">
+    <input type="button" value="">
+    <isindex>
+    <input type="reset" value="">
+    <select name="" id=""></select>
+    <select name="" id="" disabled="disabled"></select>
+    <option value=""></option>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <marquee behavior="" direction=""></marquee>
+    <menu type="context"></menu>
+    <menu type="toolbar"></menu>
+    <video src=""></video>
+    <audio src=""></audio>
+    <html xmlns="http://www.w3.org/1999/xhtml"></html>
+    <keygen>
+    <command>
+    <button type="submit"></button>
+    <button type="reset"></button>
+    <button disabled="disabled"></button>
+    <fieldset disabled="disabled"></fieldset>
+    <blockquote></blockquote>
+    <figure></figure>
+    <figcaption></figcaption>
+    <picture></picture>
+    <iframe src="" frameborder="0"></iframe>
+    <embed src="" type="">
+    <object data="" type=""></object>
+    <caption></caption>
+    <colgroup></colgroup>
+    <fieldset></fieldset>
+    <button></button>
+    <optgroup></optgroup>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <legend></legend>
+    <section></section>
+    <article></article>
+    <header></header>
+    <footer></footer>
+    <address></address>
+    <dialog></dialog>
+    <strong></strong>
+    <progress></progress>
+    <main></main>
+    <template></template>
+    <datagrid></datagrid>
+    <datalist></datalist>
+    <keygen>
+    <output></output>
+    <details></details>
+    <command>
+    <img src="" alt="" srcset="">
+    <img src="" alt="" sizes="" srcset="">
+    <picture>
+        <source media="(min-width: )" srcset="">
+        <img src="" alt="">
+    </picture>
+    <picture>
+        <source srcset="" type="image/">
+        <img src="" alt="">
+    </picture>
+    <ol>
+        <li></li>
+    </ol>
+    <ul>
+        <li></li>
+    </ul>
+    <map name="">
+        <area shape="" coords="" href="" alt="">
+    </map>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    <colgroup>
+        <col>
+    </colgroup>
+    <tr>
+        <td></td>
+    </tr>
+    <select name="" id="">
+        <option value=""></option>
+    </select>
+    <optgroup>
+        <option value=""></option>
+    </optgroup>
+    <picture>
+        <source srcset="">
+        <img src="" alt="">
+    </picture>
+
+  </body>
+
+</html>
