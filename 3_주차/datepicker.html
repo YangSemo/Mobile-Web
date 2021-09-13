@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap-datepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Bootstrap-datepicker Example</title>
+  </head>
+
+  <body>
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group date mb-3" id="datepicker1">
+                    <input type="text" class="form-control" date-target=#datepicker1 value="01/09/2021">
+                    <div class="input-group-append" date-target=#datepicker1>
+                        <div class="input-group-text">
+                            <i
+                                class="fa fa-calendar"
+                                style="font-size: 20px; color: gold">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="input-yy" placeholder="year">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="input-mm" placeholder="month">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="input-dd" placeholder="day">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery js CDN -->
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+        crossorigin="anonymous">
+    </script>  
+
+    <!-- bootstrap js CDN -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+        crossorigin="anonymous">
+    </script>    
+
+    <!-- bootstrap-datepicker JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- bootstrap-datepicker kr JS -->
+    <script src="./js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+
+    <script>
+        $(function() {
+            $("#datepicker1").datepicker({
+                format: "mm/dd/yyyy",
+                autoclose: true,
+                todayHighlight: true,
+                startDate: "-3d",
+            });
+
+            $("#input-yy").datepicker({
+                format: "yyyy",
+                autoclose: true,
+                todayHighlight: true,
+                maxViewMode: 2, // yy
+                minViewMode: 2,
+                language: "kr"
+            });
+
+            $("#input-mm").datepicker({
+                format: "mm",
+                autoclose: true,
+                todayHighlight: true,
+                maxViewMode: 1,
+                minViewMode: 1,
+                language: "kr"
+            });
+
+            $("#input-dd").datepicker({
+                format: "dd",
+                autoclose: true,
+                todayHighlight: true,
+                maxViewMode: 0, 
+                minViewMode: 0,
+                language: "kr"
+            });
+        });
+    </script>
+    
+  </body>
+</html>
