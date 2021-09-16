@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+
+        <!-- 오류남 -->
+        <!-- <script src="./change.js"></script> -->
+
+        <!-- 비동기 => 아직 파싱이 안된 경우 문제 발생할 수 있음 -->
+        <!-- <script async src="./change.js"></script> -->
+
+        <!-- 앞에 선언할 때는 defer 쓰는 것이 안전 -->
+        <script defer src="./change.js"></script>
+
+
+    </head>
+    <body>
+        <h1 id="heading">자바스크립트</h1>
+        <p id="text">위 텍스트를 클릭하세요</p>
+    
+        <!-- 이 방법이 Best -->
+        <!-- <script src="./change.js"></script> -->
+    </body>
+
+</html>
