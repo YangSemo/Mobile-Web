@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn">Button-1</button>
+    <button class="btn">Button-2</button>
+    <button class="btn">Button-3</button>
+    <script>
+      var btnList = document.querySelectorAll(".btn");
+    // var i 선언 시 마지막 값만 저장
+      for (let i = 0; i < btnList.length; i++) {
+        console.log(i);
+        console.dir(btnList);
+        btnList[i].addEventListener("click", function () {
+          console.log(`${this.innerHTML} : ${i}번 버튼 클릭`);
+        });
+      }
+    </script>
+  </body>
+</html>
