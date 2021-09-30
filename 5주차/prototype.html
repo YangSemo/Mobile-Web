@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>프로토타입이란?</h1>
+    <p>생성자 함수로 생성한 객체들이 공통으로 갖는 공간</p>
+    <script>
+      // 생성자 함수 선언
+      function Fruit(name, price) {
+        this.name = name;
+        this.price = price;
+      }
+      //프로토타입에 동적으로 메서드 추가
+      Fruit.prototype.getInfo = function () {
+        console.log(`${this.name}의 가격은 ${this.price}입니다.`);
+      };
+      //프로토타입에 동적으로 속성 추가
+      //Fruit.prototype.quantity = '10';
+      //객체 생성 및 목록(배열)에 추가
+      let fruitList = [
+        new Fruit("사과", 2000),
+        new Fruit("복숭아", 1500),
+        new Fruit("배", 2500),
+      ];
+      console.dir(Fruit);
+      console.dir(fruitList);
+      //for~of문으로 출력
+      for (let element of fruitList) {
+        element.getInfo();
+      }
+    </script>
+  </body>
+</html>

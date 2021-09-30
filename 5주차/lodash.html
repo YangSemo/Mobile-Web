@@ -1,0 +1,142 @@
+<!-- Array 객체의 주요 함수 라이브러리: Lodash -->
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Lodash example</title>
+    </head>
+    <body>
+        <!-- Lodash CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        
+        const userList = [
+        {
+          name: "Sophia",
+          age: 21,
+          gender: "Female",
+          phone: "010-1416-4494",
+          email: "Sophia@bbc.co.uk",
+          address: "Sejong",
+          vaccine: false,
+        },
+        {
+          name: "Olivia",
+          age: 17,
+          gender: "Female",
+          phone: "010-2663-3799",
+          email: "Olivia@photobucket.com",
+          address: "Gwangju",
+          vaccine: true,
+        },
+        {
+          name: "Liam",
+          age: 19,
+          gender: "Male",
+          phone: "010-1738-3830",
+          email: "Liam@godaddy.com",
+          address: "Seoul",
+          vaccine: true,
+        },
+        {
+          name: "Noah",
+          age: 18,
+          gender: "Male",
+          phone: "010-1324-6183",
+          email: "Noah@dot.gov",
+          address: "Daegu",
+          vaccine: true,
+        },
+        {
+            name: "Emma",
+            age: 20,
+            gender: "Female",
+            phone: "010-2395-5004",
+            email: "Emma@ycombinator.com",
+            address: "Incheon",
+            vaccine: false,
+          },
+          {
+            name: "Aiden",
+            age: 20,
+            gender: "Male",
+            phone: "010-1585-3613",
+            email: "Aiden@bloglovin.com",
+            address: "Busan",
+            vaccine: false,
+          },
+          {
+            name: "Locas",
+            age: 15,
+            gender: "Male",
+            phone: "010-1466-6989",
+            email: "Locas@google.com.hk",
+            address: "Seoul",
+            vaccine: true,
+          },
+          {
+            name: "Aria",
+            age: 22,
+            gender: "Female",
+            phone: "010-1129-8180",
+            email: "Aria@newsvine.com",
+            address: "Jeju",
+            vaccine: false,
+          },
+          {
+            name: "Mia",
+            age: 18,
+            gender: "Female",
+            phone: "010-1530-0161",
+            email: "Mia@walmart.com",
+            address: "Gyeonggi",
+            vaccine: true,
+          },
+          {
+            name: "Isabella",
+            age: 21,
+            gender: "Female",
+            phone: "010-1244-7366",
+            email: "Isabella@springer.com",
+            address: "Seoul",
+            vaccine: true,
+          },
+        ];
+    
+        <script>
+            let result = _.first(userList);
+            console.log(result);
+
+            result = _.sortBy(userList, "name");
+            console.log(result);
+
+            result = _.sortBy(userList, "age", "name");
+            console.log(result);
+
+            result = _.filter(userList, {age:19});
+            console.log(result);
+
+            result = _.filter(userList, {vaccine:true});
+            console.log(result);
+
+            result = _.filter(userList, {vaccine:false});
+            console.log(result);
+
+            result = _.filter(userList, (user) => {
+                return user.age < 19
+            });
+            console.log(result);
+
+            result = _.minBy(userList, "age");
+            console.log(result);
+
+            result = _.maxBy(userList, "age");
+            console.log(result);
+
+        </script>
+    
+    </body>
+
+</html>
