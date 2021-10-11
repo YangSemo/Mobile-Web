@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>JQuery Ajax</title>
+        <link type="text/css" rel="stylesheet" href="./css/weatherinfo.css"/>
+        <!-- weather icon cdn-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+        />
+    </head>
+
+    <body>
+        <section class="content-wrapper">
+            <h2>날씨검색 웹</h2>
+            <div class="input-wrapper">
+                <input type="text" /><!-- 검색할 도시 입력창 -->
+                <button class="confirm">날씨 확인</button>
+            </div>
+
+            <div class="result-wrapper">
+                <img id="result-image" src="./img/clear.png" alt="" />
+            </div>
+
+            <h2 id="result-text">도시를 입력해주세요.</h2>
+            <div id="weather-info">
+            <!-- 날씨 정보 표시 -->
+            </div>
+        </section>
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- axious cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"></script>
+        <!-- <script src="./js/ajax.js"></script> -->
+        <!-- <script src="./js/fetch.js"></script> -->
+        <!-- <script src="./js/async-await.js"></script> -->
+        <script src="./js/axios.js"></script>
+
+    </body>
+
+</html>
